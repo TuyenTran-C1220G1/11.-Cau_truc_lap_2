@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let firstMoney = +prompt("Enter your money:");
+    let months = +prompt("Enter months:");
+    let rate = +prompt("Enter rate each month:");
+    for (i = 1; i <= months; i++) {
+        firstMoney += firstMoney * rate / 100;
+    }
+    document.write("Your money after "+months+" months : "+firstMoney);
+</script>
