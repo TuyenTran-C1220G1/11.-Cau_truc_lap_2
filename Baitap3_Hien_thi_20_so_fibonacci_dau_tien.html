@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let f0 = 0;
+    let f1 = 1;
+    let f2;
+    let total = f0 + f1;
+    let n = parseInt(prompt("Input amount of array Fibonacci:"));
+    document.write(f0 + "->" + f1);
+    for (i = 0; i < n - 2; i++) {
+        f2 = f0 + f1;
+        document.write('->' + f2);
+        total += f2;
+        f0 = f1;
+        f1 = f2;
+        if(f2==5){continue}
+        if (f2 % 5 == 0) {
+            document.write(" First number divisible by 5 is " + f2 + "->");
+            break;
+        }
+    }
+    document.write("Total=", +total);
+</script>

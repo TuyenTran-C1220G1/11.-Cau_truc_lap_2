@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button style="text-align: center:50px; width: 100px; display: block" type="button" onclick="play()" value="START">START
+</button>
+</body>
+</html>
+<script>
+    function play() {
+        let randomNumber = Math.floor(Math.random() * 99) + 1;
+        console.log(randomNumber);
+        let number;
+        let count = 0;
+        do {
+            number = parseInt(prompt("Input a number from 1 to 99:",));
+            if (number != randomNumber) {
+                alert("Please input again!");
+                count++;
+                if (count++ > 3) {
+                    alert(" Your entered is over 3 times. See you tomorrow!")
+                    break;
+                }
+            } else alert("Bravo! You Win!")
+        }
+        while (number != randomNumber)
+    }
+
+</script>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let inputTemperature;
+    do {
+        inputTemperature = parseInt(prompt("Input the temperature:",));
+        if (inputTemperature > 100) {
+            alert("Requirement reduced temperature!");
+        } else if (inputTemperature < 20) {
+            alert("Requirement increased temperature!");
+        }
+    }
+    while (inputTemperature < 20 || inputTemperature > 100)
+    alert("That is right! Temperature is " + inputTemperature);
+</script>

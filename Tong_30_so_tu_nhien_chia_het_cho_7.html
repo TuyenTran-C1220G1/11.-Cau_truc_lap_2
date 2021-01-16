@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let amount = parseInt(prompt("Input amount numbers:"));
+    let total = 0;
+    let count = 0;
+    let i = 1;
+    while (count < amount) {
+        if (i % 7 == 0) {
+            count++;
+            total += i;
+        }
+        i++;
+    }
+    document.write("Total of " + amount + " first numbers, which divisible by 7: " + total);
+</script>
